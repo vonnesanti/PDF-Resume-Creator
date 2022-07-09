@@ -162,19 +162,13 @@ Public Class Form1
             tmp.Write(pdf, 0, pdf.Length)
         End Using
         Process.Start("C:\Users\fujjitsu\source\repos\PDF Resume Creator\Santiago_Yvonne.pdf")
-        'axAcroPDF1.src = "C:\Users\fujjitsu\source\repos\PDF Resume Creator\Santiago_Yvonne.pdf"
     End Sub
 
-    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
-        'waldintohahahah
-    End Sub
 
-    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
-
-    End Sub
-
-    Private Sub ToolStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
-        Dim filename As String = "open.pdf"
-        System.Diagnostics.Process.Start(filename)
+    Private Sub exitBtn_Click(sender As Object, e As EventArgs) Handles exitBtn.Click
+        Dim GameExit As DialogResult = MessageBox.Show("Are you sure you want to exit?", "CONTACT TRACING FORM", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information)
+        If GameExit = DialogResult.Yes Then
+            Application.Exit()
+        End If
     End Sub
 End Class

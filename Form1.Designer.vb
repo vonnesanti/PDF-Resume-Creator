@@ -29,7 +29,7 @@ Partial Class Form1
         '
         'exitBtn
         '
-        Me.exitBtn.Location = New System.Drawing.Point(732, 559)
+        Me.exitBtn.Location = New System.Drawing.Point(72, 112)
         Me.exitBtn.Name = "exitBtn"
         Me.exitBtn.Size = New System.Drawing.Size(75, 35)
         Me.exitBtn.TabIndex = 1
@@ -38,7 +38,7 @@ Partial Class Form1
         '
         'createBtn
         '
-        Me.createBtn.Location = New System.Drawing.Point(36, 559)
+        Me.createBtn.Location = New System.Drawing.Point(24, 36)
         Me.createBtn.Name = "createBtn"
         Me.createBtn.Size = New System.Drawing.Size(75, 35)
         Me.createBtn.TabIndex = 2
@@ -47,7 +47,7 @@ Partial Class Form1
         '
         'viewBtn
         '
-        Me.viewBtn.Location = New System.Drawing.Point(369, 559)
+        Me.viewBtn.Location = New System.Drawing.Point(136, 36)
         Me.viewBtn.Name = "viewBtn"
         Me.viewBtn.Size = New System.Drawing.Size(75, 35)
         Me.viewBtn.TabIndex = 3
@@ -58,7 +58,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(873, 606)
+        Me.ClientSize = New System.Drawing.Size(238, 186)
         Me.Controls.Add(Me.createBtn)
         Me.Controls.Add(Me.exitBtn)
         Me.Controls.Add(Me.viewBtn)
