@@ -1,0 +1,41 @@
+{
+    "FullName": "Yvonne Santiago",
+    "Image": "bg.png",
+
+    "ContactTitle": "CONTACT",
+    "Address": "Sabang Tuy, Batangas",
+    "CityAddress": "Sta. Cruz, Manila",
+    "PhoneNumber": "0915-359-6869",
+    "EmailAddress": "yvonnesantiago61@gmail.com",
+
+    "Skills": "SKILLS",
+    "Skill1": "Social Media",
+    "Skill2": "Writing",
+    "Skill3": "Photography",
+    "Skill4": "Leadership",
+    "Skill5": "Designing",
+
+    "AboutTitle": "ABOUT",
+    "Profile": "Prospective graduate of a Bachelor's degree in multimedia arts seeking an internship position at local design studios and digital marketing companies. Highly motivated and creative individual specializing in layout design, 3D modeling, and typography art. ",
+
+    "EducationTitle": "EDUCATION HISTORY",
+    "Educ1": "June 2022",
+    "EducTitle1": "Bachelor's Degree in Multimedia Arts",
+    "EducSchool1": " University of Santa Solana",
+    "EducDesc1": "Santa Solana: GPA 3.52",
+    "Educ2": "2016 - 2020",
+    "EducTitle2": "High School Diploma",
+    "EducSchool2": "Cordale High School North Fortberry",
+    "EducDesc2": "Academic excellence in Product Design and English.",
+
+    "WorkTitle": "WORK EXPERIENCE",
+    "Work1": "Oct 2020-Present",
+    "WorkTitle1": "Art Director",
+    "WorkComp1": "California Museum of Arts and Sculpture",
+    "WorkDesc1": "Designs unique graphic designs for clients.",
+    "Work2": "Sep 2019-Aug 2020",
+    "WorkTitle2": "Project Manager",
+    "WorkComp2": "Vogue Manila",
+    "WorkDesc2": "Edited editorial photos for clients and magazines."
+
+}
