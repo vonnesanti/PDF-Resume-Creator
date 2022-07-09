@@ -22,5 +22,23 @@ PDF Resume Creator
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:PDF_Resume_Creator.My.Resources.Resources.Members">
+<summary>
+  Looks up a localized string similar to FINAL PROJECT: Poll App
+
+Members:
+
+Cepe, Nicah S.
+Furton, Rochel B.
+Linao, Genrev F.
+Santiago, Yvonne B.
+Tan, Frederick.
+</summary>
+</member>
+<member name="P:PDF_Resume_Creator.My.Resources.Resources.sample">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
 </members>
 </doc>

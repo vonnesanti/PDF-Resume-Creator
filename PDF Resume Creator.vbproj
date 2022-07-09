@@ -204,6 +204,11 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Resources\LinkedIn Learning Certificate.pdf" />
+    <None Include="Santiago_Yvonne.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Members.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

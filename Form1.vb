@@ -1,11 +1,23 @@
-﻿Imports System.IO
+﻿Imports System
+Imports System.Collections.Generic
+Imports System.ComponentModel
+Imports System.Data
+Imports System.Drawing
+Imports System.Linq
+Imports System.Text
+Imports System.Threading.Tasks
+Imports System.Windows.Forms
+Imports System.IO
 Imports Newtonsoft.Json
 Imports iTextSharp.text
 Imports iTextSharp.text.pdf
 Imports iTextSharp.text.pdf.draw
+Imports System.Net
 
 
 Public Class Form1
+    Private axAcroPDF1 As Object
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -15,7 +27,7 @@ Public Class Form1
         Dim open_jsonfile As String = File.ReadAllText(json_pathfile)
         Dim outputJson As readJson = JsonConvert.DeserializeObject(Of readJson)(open_jsonfile)
         Dim PDFResume As Document = New Document()
-        PdfWriter.GetInstance(PDFResume, New FileStream("C:\Users\fujjitsu\source\repos\PDF Resume Creator\Yvonne.pdf", FileMode.Create))
+        PdfWriter.GetInstance(PDFResume, New FileStream("C:\Users\fujjitsu\source\repos\PDF Resume Creator\Santiago_Yvonne.pdf", FileMode.Create))
 
         Dim main_font As iTextSharp.text.Font = FontFactory.GetFont(iTextSharp.text.Font.FontFamily.TIMES_ROMAN.ToString(), 22, iTextSharp.text.Font.BOLD)
         Dim lessmain_font As iTextSharp.text.Font = FontFactory.GetFont(iTextSharp.text.Font.FontFamily.TIMES_ROMAN.ToString(), 17, iTextSharp.text.Font.BOLD)
@@ -145,10 +157,24 @@ Public Class Form1
 
 
     Private Sub viewBtn_Click(sender As Object, e As EventArgs) Handles viewBtn.Click
-        'walatohahaha
+        Dim pdf As Byte() = My.Resources.sample
+        Using tmp As New FileStream("Santiago_Yvonne.pdf", FileMode.Create)
+            tmp.Write(pdf, 0, pdf.Length)
+        End Using
+        Process.Start("C:\Users\fujjitsu\source\repos\PDF Resume Creator\Santiago_Yvonne.pdf")
+        'axAcroPDF1.src = "C:\Users\fujjitsu\source\repos\PDF Resume Creator\Santiago_Yvonne.pdf"
     End Sub
 
-    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
         'waldintohahahah
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
+
+    End Sub
+
+    Private Sub ToolStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
+        Dim filename As String = "open.pdf"
+        System.Diagnostics.Process.Start(filename)
     End Sub
 End Class
